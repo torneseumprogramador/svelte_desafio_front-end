@@ -1,6 +1,10 @@
 <script>
-	import Router from 'svelte-spa-router';
+	import { Router, Route } from 'svelte-routing';
 	import routes from './routes.js';
-</script>
+  </script>
   
-<Router {routes} />
+<Router>
+	{#each routes as { path, component }}
+		<Route {path} component={component} />
+	{/each}
+</Router>
