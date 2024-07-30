@@ -1,11 +1,9 @@
 <script>
 	import Header from "../componentes/header.svelte";
-	import Menu from "../componentes/menu.svelte";
 	import Footer from "../componentes/footer.svelte";
 </script>
 
 <Header></Header>
-<Menu></Menu>
 <section class="page-section cta">
 	<div class="container">
 		<div class="row">

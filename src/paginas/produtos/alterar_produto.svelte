@@ -26,7 +26,7 @@
       loadingForm = false;
     }
   }
-
+  
   onMount(async () => {
     try {
       produto = await ProdutoService.buscarPorId(id);

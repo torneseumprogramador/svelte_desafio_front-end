@@ -9,8 +9,7 @@ const API = axios.create({
 });
 
 API.interceptors.request.use(config => {
-  // const token = LoginServico.getToken();
-  const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzIyMjQ0NjEyLCJleHAiOjE3MjIzMzEwMTJ9.5pEZEBy4dQXIj-lmuW5HZd4qv9XL9sDnajTJIpRgmpM";
+  const token = LoginServico.getToken();
   if (token) {
     config.headers.Authorization = `Bearer ${token}`;
   }
