@@ -10,7 +10,7 @@ const API = axios.create({
 
 API.interceptors.request.use(config => {
   // const token = LoginServico.getToken();
-  const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzIyMTU4MDM1LCJleHAiOjE3MjIyNDQ0MzV9.guu0m9w4g3NudYsFO0zAfU0mA7Vmfh31LmmbFFQgth8";
+  const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzIyMjQ0NjEyLCJleHAiOjE3MjIzMzEwMTJ9.5pEZEBy4dQXIj-lmuW5HZd4qv9XL9sDnajTJIpRgmpM";
   if (token) {
     config.headers.Authorization = `Bearer ${token}`;
   }
